@@ -26,8 +26,21 @@
         <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
     <modules>
-        <module>cloud-server</module>
+        <module>httpbin</module>
     </modules>
 
     <repositories>
@@ -44,9 +57,6 @@
             </snapshots>
         </repository>
     </repositories>
-
-    <dependencies>
-    </dependencies>
 
     <build>
         <plugins>
