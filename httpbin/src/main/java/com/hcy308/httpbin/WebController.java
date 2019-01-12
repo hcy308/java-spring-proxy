@@ -8,7 +8,7 @@ public class WebController {
 
     @GetMapping("/")
     public String home() {
-        return "Http bin sweet home ^_^~~";
+        return "Java Spring Proxy to Httpbin";
     }
 
 }
